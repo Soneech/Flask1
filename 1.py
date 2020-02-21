@@ -5,12 +5,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def default():
-    return "Миссия Колонизация Марса"
+    return ''
 
 
-@app.route('/index')
-def index():
-    return "И на Марсе будут яблони цвести!"
+@app.route('/promotion')
+def promotion():
+    message = [
+        'Человечество вырастает из детства.', 'Человечеству мала одна планета.',
+        'Мы сделаем обитаемыми безжизненные пока планеты.', 'И начнем с Марса!',
+        'Присоединяйся!'
+    ]
+    return '</br>'.join(message)
 
 
 if __name__ == '__main__':
