@@ -7,6 +7,7 @@ app = Flask(__name__)
 def default():
     return "Миссия Колонизация Марса"
 
+
 @app.route('/index')
 def index():
     return "И на Марсе будут яблони цвести!"
